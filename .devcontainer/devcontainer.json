@@ -1,0 +1,17 @@
+{
+  "name": "Go GStreamer CGO Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "go.gopath": "/go"
+  },
+  "extensions": [
+    "golang.Go",
+    "ms-vscode.cpptools"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "remoteUser": "root"
+}
